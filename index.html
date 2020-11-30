@@ -1,0 +1,92 @@
+<!DOCYTPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>KHGames</title>
+ </head>
+ <body style="text-align:center;">
+    <img src="khgames.jpg">
+   <h2>KHGAMES에 오신것을 환영합니다.</h2>
+ <form name="signup" method="post" action="signup.php">
+   <h3>회원가입을 하거나 로그인하여 kh게임즈의 컨텐츠를 즐겨보세요!</h3>
+   <div>
+   <table border="2px" 
+     style="padding:39px;
+      margin:auto"
+   >
+     <style>
+     td{
+      border:0px;
+     }
+   /*div{
+       display:grid;
+       grid-template-columns:1fr 1fr;
+     }*/
+     </style>
+     <tr>
+        <td style="font-size:25px;">회원가입</td>
+     </tr>
+
+     <tr>
+       <td>이름</td>
+       <td><input type="text" name="name"></td>
+     </tr>
+     <tr>
+       <td>ID</td>
+       <td><input type="text" name="id"></td>
+     </tr>
+     <tr>
+       <td>비밀번호</td>
+       <td><input type="password" name="password"></td>
+     </tr>
+     <tr>
+       <td>생년월일</td>
+       <td><input type="date" name="birth"></td>
+     </tr>
+       <tr>
+          <td>성별 선택 :</td>
+         <td>
+         여성<input type="radio" name="gender" value="female">
+         남성<input type="radio" name="gender" value="male">
+         </td>
+      </tr>
+      <tr>
+        <td>E-MAIL</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+    <tr>
+    <td>휴대폰번호</td>
+    <td><input type="tel" name="tel"></td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="가입하기"></td>
+    <td><input type="reset" value="다시작성"></td>
+  </tr>
+   </table>
+ </form>
+ </div>
+
+ <div>
+   <form name="login" action="login.php">
+   <table border="2px;" 
+     style="padding:10px;
+     margin:auto;"
+   >
+   <tr>
+     <td style="font-size:25px;">로그인</td>
+   </tr>
+   <tr>
+   <td>ID</td>
+   <td><input type="text" name="loginid"></td>
+   <td rowspan="2"><button style="width:70px; height:50px;" name="login">LOGIN</button></td>
+ </tr>
+ <tr>
+   <td>PASSWORD</td>
+     <td><input type="password" name="loginpassword"></td>
+ </tr>
+ </table>
+ </div>
+ </form>
+	<h5>Copyright © KHGames Corp. All rights reserved.</h5>
+ </body>
+</html>
